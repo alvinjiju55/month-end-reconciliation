@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Generated data: reproducible with `python generator.py`, and the app builds it in memory
+platform_transactions.csv
+bank_settlements.csv
+ground_truth.json
+out/
+
+# Streamlit secrets (none used today, never commit them)
+.streamlit/secrets.toml
+
+# Editor / tooling
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,8 @@
+# Python 3.10. All pins verified to support 3.10 (numpy 2.3+ drops it).
+streamlit==1.65.0
+pandas==2.3.3
+numpy==2.2.6
+plotly==6.5.1
+
+# tests only (harmless on Streamlit Cloud)
+pytest==9.2.0
