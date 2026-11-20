@@ -19,7 +19,7 @@ problems, so the reconciler can be tested against an answer key.
 
 ## Run it
 
-Python 3.10.
+Python 3.10 to 3.13 (developed and tested on 3.10).
 
 ```bash
 python -m venv .venv
@@ -122,5 +122,6 @@ error in the totals.
 1. Push this folder to a GitHub repo (public, or private with access granted).
 2. At https://share.streamlit.io choose **Create app → Deploy a public app from GitHub**.
 3. Pick the repo, branch `main`, main file `app.py`.
-4. Under **Advanced settings**, choose Python **3.10**.
+4. Under **Advanced settings**, choose Python **3.11** (the oldest version Streamlit Cloud offers).
+   Avoid the default 3.14: the pinned `numpy==2.2.6` has no 3.14 build, so the install fails.
 5. Deploy. The app installs `requirements.txt` and generates its data in memory, so no data files need to be committed.
